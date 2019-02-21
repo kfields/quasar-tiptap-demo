@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated class="glossy">
+    <q-header elevated reveal>
       <div v-bind:is="toolbar" />
     </q-header>
 

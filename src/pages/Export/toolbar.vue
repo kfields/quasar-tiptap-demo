@@ -9,92 +9,91 @@
     >
       <q-icon name="menu" />
     </q-btn>
-    <q-space />
-      <editor-menu-bar :editor="editor">
-        <div class="menubar" slot-scope="{ commands, isActive }">
+    <editor-menu-bar :editor="editor">
+      <div class="menubar" slot-scope="{ commands, isActive }">
 
-          <button
-            class="menubar__button"
-            :class="{ 'is-active': isActive.bold() }"
-            @click="commands.bold"
-          >
-            <svgicon name="bold" />
-          </button>
+        <button
+          class="menubar__button"
+          :class="{ 'is-active': isActive.bold() }"
+          @click="commands.bold"
+        >
+          <svgicon name="bold" />
+        </button>
 
-          <button
-            class="menubar__button"
-            :class="{ 'is-active': isActive.italic() }"
-            @click="commands.italic"
-          >
-            <svgicon name="italic" />
-          </button>
+        <button
+          class="menubar__button"
+          :class="{ 'is-active': isActive.italic() }"
+          @click="commands.italic"
+        >
+          <svgicon name="italic" />
+        </button>
 
-          <button
-            class="menubar__button"
-            :class="{ 'is-active': isActive.code() }"
-            @click="commands.code"
-          >
-            <svgicon name="code" />
-          </button>
+        <button
+          class="menubar__button"
+          :class="{ 'is-active': isActive.code() }"
+          @click="commands.code"
+        >
+          <svgicon name="code" />
+        </button>
 
-          <button
-            class="menubar__button"
-            :class="{ 'is-active': isActive.paragraph() }"
-            @click="commands.paragraph"
-          >
-            <svgicon name="paragraph" />
-          </button>
+        <button
+          class="menubar__button"
+          :class="{ 'is-active': isActive.paragraph() }"
+          @click="commands.paragraph"
+        >
+          <svgicon name="paragraph" />
+        </button>
 
-          <button
-            class="menubar__button"
-            :class="{ 'is-active': isActive.heading({ level: 1 }) }"
-            @click="commands.heading({ level: 1 })"
-          >
-            H1
-          </button>
+        <button
+          class="menubar__button"
+          :class="{ 'is-active': isActive.heading({ level: 1 }) }"
+          @click="commands.heading({ level: 1 })"
+        >
+          H1
+        </button>
 
-          <button
-            class="menubar__button"
-            :class="{ 'is-active': isActive.heading({ level: 2 }) }"
-            @click="commands.heading({ level: 2 })"
-          >
-            H2
-          </button>
+        <button
+          class="menubar__button"
+          :class="{ 'is-active': isActive.heading({ level: 2 }) }"
+          @click="commands.heading({ level: 2 })"
+        >
+          H2
+        </button>
 
-          <button
-            class="menubar__button"
-            :class="{ 'is-active': isActive.heading({ level: 3 }) }"
-            @click="commands.heading({ level: 3 })"
-          >
-            H3
-          </button>
+        <button
+          class="menubar__button"
+          :class="{ 'is-active': isActive.heading({ level: 3 }) }"
+          @click="commands.heading({ level: 3 })"
+        >
+          H3
+        </button>
 
-          <button
-            class="menubar__button"
-            :class="{ 'is-active': isActive.bullet_list() }"
-            @click="commands.bullet_list"
-          >
-            <svgicon name="ul" />
-          </button>
+        <button
+          class="menubar__button"
+          :class="{ 'is-active': isActive.bullet_list() }"
+          @click="commands.bullet_list"
+        >
+          <svgicon name="ul" />
+        </button>
 
-          <button
-            class="menubar__button"
-            :class="{ 'is-active': isActive.ordered_list() }"
-            @click="commands.ordered_list"
-          >
-            <svgicon name="ol" />
-          </button>
+        <button
+          class="menubar__button"
+          :class="{ 'is-active': isActive.ordered_list() }"
+          @click="commands.ordered_list"
+        >
+          <svgicon name="ol" />
+        </button>
 
-          <button
-            class="menubar__button"
-            :class="{ 'is-active': isActive.code_block() }"
-            @click="commands.code_block"
-          >
-            <svgicon name="code" />
-          </button>
+        <button
+          class="menubar__button"
+          :class="{ 'is-active': isActive.code_block() }"
+          @click="commands.code_block"
+        >
+          <svgicon name="code" />
+        </button>
 
-        </div>
-      </editor-menu-bar>
+      </div>
+    </editor-menu-bar>
   </q-toolbar>
 </template>
 

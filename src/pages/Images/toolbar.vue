@@ -9,7 +9,6 @@
     >
       <q-icon name="menu" />
     </q-btn>
-    <q-space />
     <editor-menu-bar :editor="editor">
       <div class="menubar" slot-scope="{ commands }">
         <button

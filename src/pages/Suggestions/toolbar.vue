@@ -9,7 +9,6 @@
     >
       <q-icon name="menu" />
     </q-btn>
-    <q-space />
       <editor-menu-bar :editor="editor">
         <div class="menubar" slot-scope="{ commands }">
           <button class="menubar__button" @click="commands.mention({ id: 1, label: 'Philipp Kühn' })">

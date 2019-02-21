@@ -10,9 +10,6 @@
       <q-icon name="menu" />
     </q-btn>
 
-    <div id="toolbar">
-    </div>
-
     <q-toolbar-title>
       Quasar Tiptap Demo
     </q-toolbar-title>
