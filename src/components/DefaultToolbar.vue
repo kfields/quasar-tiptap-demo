@@ -16,8 +16,6 @@
     <q-toolbar-title>
       Quasar Tiptap Demo
     </q-toolbar-title>
-
-    <div>Quasar v{{ $q.version }}</div>
   </q-toolbar>
 </template>
 
