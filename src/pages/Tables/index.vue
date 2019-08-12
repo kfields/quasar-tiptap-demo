@@ -58,7 +58,9 @@ export default {
           new Strike(),
           new Underline(),
           new History(),
-          new Table(),
+          new Table({
+            resizable: true
+          }),
           new TableHeader(),
           new TableCell(),
           new TableRow()
