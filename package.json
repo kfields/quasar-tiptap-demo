@@ -7,6 +7,7 @@
   "author": "Kurtis Fields <kurtisfields@gmail.com>",
   "private": true,
   "scripts": {
+    "build": "quasar build -m pwa",
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"No test specified\" && exit 0",
     "generate-icons": "vsvg -s ./svg-icons -t ./src/compiled-icons"
@@ -39,9 +40,9 @@
     "strip-ansi": "6.0.0"
   },
   "engines": {
-    "node": ">= 8.9.0",
-    "npm": ">= 5.6.0",
-    "yarn": ">= 1.6.0"
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
   },
   "browserslist": [
     "> 1%",
@@ -49,7 +50,7 @@
     "not ie <= 10"
   ],
   "resolutions": {
-    "ajv": "6.8.1",
+    "ajv": "6.10.2",
     "prosemirror-model": "1.8.2"
   }
 }
