@@ -11,10 +11,10 @@
     </q-btn>
       <editor-menu-bar :editor="editor">
         <div class="menubar" slot-scope="{ commands }">
-          <button class="menubar__button" @click="commands.mention({ id: 1, label: 'Philipp Kühn' })">
+          <q-btn @click="commands.mention({ id: 1, label: 'Philipp Kühn' })">
             <svgicon name="mention" />
             <span>Insert Mention</span>
-          </button>
+          </q-btn>
         </div>
       </editor-menu-bar>
 

@@ -1,3 +1,32 @@
+
+.menubar {
+  transition: visibility 0.2s 0.4s, opacity 0.2s 0.4s;
+  box-shadow: none !important;
+
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &.is-focused {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.2s, opacity 0.2s;
+  }
+
+}
+.menubar .q-btn__wrapper {
+  padding: 4px 8px;
+  box-shadow: none !important;
+}
+.menubar .q-btn__wrapper::before {
+  padding: 4px 8px;
+  box-shadow: none !important;
+}
+.q-btn.is-active {
+  background-color: rgba($color-white, 0.1);
+}
+/*
 .menubar {
   transition: visibility 0.2s 0.4s, opacity 0.2s 0.4s;
 
@@ -32,3 +61,4 @@
     }
   }
 }
+*/

@@ -12,37 +12,33 @@
     <editor-menu-bar :editor="editor">
       <div class="menubar" slot-scope="{ commands, isActive }">
 
-        <button
-          class="menubar__button"
+        <q-btn
           :class="{ 'is-active': isActive.bold() }"
           @click="commands.bold"
         >
           <svgicon name="bold" />
-        </button>
+        </q-btn>
 
-        <button
-          class="menubar__button"
+        <q-btn
           :class="{ 'is-active': isActive.italic() }"
           @click="commands.italic"
         >
           <svgicon name="italic" />
-        </button>
+        </q-btn>
 
-        <button
-          class="menubar__button"
+        <q-btn
           :class="{ 'is-active': isActive.code() }"
           @click="commands.code"
         >
           <svgicon name="code" />
-        </button>
+        </q-btn>
 
-        <button
-          class="menubar__button"
+        <q-btn
           :class="{ 'is-active': isActive.todo_list() }"
           @click="commands.todo_list"
         >
           <svgicon name="checklist" />
-        </button>
+        </q-btn>
 
       </div>
     </editor-menu-bar>

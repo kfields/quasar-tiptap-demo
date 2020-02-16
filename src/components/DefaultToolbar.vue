@@ -21,9 +21,7 @@ import UiMixin from 'src/mixins/ui'
 import { mapActions } from 'vuex'
 export default {
   name: 'DefaultToolbar',
-  mixins: [
-    UiMixin
-  ],
+  mixins: [UiMixin],
   props: [],
   methods: {
     ...mapActions([

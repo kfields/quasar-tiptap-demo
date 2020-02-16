@@ -11,12 +11,11 @@
     </q-btn>
     <editor-menu-bar :editor="editor">
       <div class="menubar" slot-scope="{ commands }">
-        <button
-          class="menubar__button"
+        <q-btn
           @click="showImagePrompt(commands.image)"
         >
           <svgicon name="image" />
-        </button>
+        </q-btn>
       </div>
     </editor-menu-bar>
   </q-toolbar>

@@ -12,19 +12,17 @@
     <editor-menu-bar :editor="editor">
       <div class="menubar" slot-scope="{ commands }">
 
-        <button
-          class="menubar__button"
+        <q-btn
           @click="commands.undo"
         >
           <svgicon name="undo" />
-        </button>
+        </q-btn>
 
-        <button
-          class="menubar__button"
+        <q-btn
           @click="commands.redo"
         >
           <svgicon name="redo" />
-        </button>
+        </q-btn>
 
       </div>
     </editor-menu-bar>

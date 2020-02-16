@@ -34,11 +34,14 @@ module.exports = function (ctx) {
         'QToolbarTitle',
         'QSpace',
         'QBtn',
+        'QBtnGroup',
         'QIcon',
         'QList',
         'QItem',
         'QItemSection',
-        'QItemLabel'
+        'QItemLabel',
+        'QScrollArea',
+        'QCheckbox'
       ],
 
       directives: [

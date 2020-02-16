@@ -1,9 +1,6 @@
 <template>
   <q-page padding class="editor">
-    <div class="checkbox">
-      <input type="checkbox" id="editable" v-model="editable" />
-      <label for="editable">editable</label>
-    </div>
+    <q-checkbox id="editable" left-label v-model="editable" label="editable" />
 
     <editor-content class="editor__content" :editor="myeditor" />
   </q-page>

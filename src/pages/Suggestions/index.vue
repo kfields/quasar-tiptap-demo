@@ -1,7 +1,7 @@
 <template>
-  <q-page padding>
+  <q-page padding ref="page">
 
-    <div class="editor">
+    <div id="editor" class="editor" ref="editor">
       <editor-content class="editor__content" :editor="myeditor" />
     </div>
 
@@ -31,7 +31,7 @@ import PageMixin from 'src/mixins/page'
 import Toolbar from './toolbar'
 
 import Fuse from 'fuse.js'
-import tippy from 'tippy.js'
+import tippy, { roundArrow } from 'tippy.js'
 import { Editor, EditorContent } from 'tiptap'
 import {
   HardBreak,
@@ -212,24 +212,50 @@ export default {
       if (this.popup) {
         return
       }
+      const b = this.$refs.editor.getBoundingClientRect()
+      const a = node.getBoundingClientRect()
+      const c = {}
+      c.top = a.top - b.top
+      c.left = a.left - b.left
+      // const rect = node.getBoundingClientRect()
+      const rect = c
+      console.log(c)
 
-      this.popup = tippy(node, {
+      const element = document.createElement('div')
+      element.style.position = 'absolute'
+      element.style.left = rect.left + 'px'
+      element.style.top = rect.top + 'px'
+      element.style.width = rect.width + 'px'
+      element.style.height = rect.height + 'px'
+      this.$refs.editor.appendChild(element)
+      this.element = element
+      this.popup = tippy(element, {
+        boundary: 'viewport',
         content: this.$refs.suggestions,
         trigger: 'mouseenter',
         interactive: true,
-        theme: 'dark',
+        theme: 'material',
         placement: 'top-start',
         inertia: true,
         duration: [400, 200],
-        showOnInit: true,
-        arrow: true,
-        arrowType: 'round'
+        showOnCreate: true,
+        arrow: roundArrow /* ,
+        lazy: false,
+        onCreate (instance) {
+          console.log(instance)
+          instance.popperInstance.reference = {
+            clientWidth: node.clientWidth,
+            clientHeight: node.clientHeight,
+            getBoundingClientRect: node.getBoundingClientRect
+          }
+        } */
       })
     },
 
     destroyPopup () {
       if (this.popup) {
-        this.popup.destroy(true)
+        this.$refs.editor.removeChild(this.element)
+        this.popup.destroy()
         this.popup = null
       }
     }
@@ -241,6 +267,8 @@ export default {
 <style lang="scss">
 @import "src/css/main";
 @import "~tippy.js/dist/tippy.css";
+@import "~tippy.js/dist/svg-arrow.css";
+@import "~tippy.js/themes/material.css";
 
 .mention {
   background: rgba($color-black, 0.1);
