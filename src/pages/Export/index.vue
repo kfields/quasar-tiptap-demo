@@ -46,7 +46,7 @@ import {
 } from 'tiptap-extensions'
 
 export default {
-  mixins: [ UiMixin, PageMixin ],
+  mixins: [UiMixin, PageMixin],
   components: {
     EditorContent
   },

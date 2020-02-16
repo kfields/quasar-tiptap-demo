@@ -4,7 +4,7 @@ export default {
   computed: {
     leftDrawerOpen: {
       get: function () {
-        return this.$store.getters['leftDrawerOpen']
+        return this.$store.getters.leftDrawerOpen
       },
       set: function (val) {
         this.$store.commit('setLeftDrawerOpen', val)

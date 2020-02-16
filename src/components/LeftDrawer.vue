@@ -142,7 +142,7 @@
 import UiMixin from 'src/mixins/ui'
 export default {
   name: 'LeftDrawer',
-  mixins: [ UiMixin ],
+  mixins: [UiMixin],
   data () {
     return {
     }

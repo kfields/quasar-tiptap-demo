@@ -12,26 +12,31 @@
     "generate-icons": "vsvg -s ./svg-icons -t ./src/compiled-icons"
   },
   "dependencies": {
-    "@quasar/extras": "^1.2.0",
-    "axios": "^0.18.1",
+    "@quasar/extras": "^1.5.1",
+    "ajv": "6.11.0",
+    "axios": "^0.19.1",
     "fuse.js": "^3.4.5",
     "node-sass": "^4.12.0",
-    "quasar": "^1.0.5",
-    "sass-loader": "^7.2.0",
-    "tippy.js": "^4.3.5",
+    "quasar": "^1.9.2",
+    "sass-loader": "^8.0.2",
+    "tippy.js": "^5.1.4",
     "tiptap": "^1.24.1",
     "tiptap-commands": "^1.10.12",
     "tiptap-extensions": "^1.26.1",
     "vue-svgicon": "^3.2.6"
   },
   "devDependencies": {
-    "@quasar/app": "^1.0.4",
-    "@vue/eslint-config-standard": "^4.0.0",
+    "@quasar/app": "^1.5.6",
+    "@vue/eslint-config-standard": "^5.1.0",
     "babel-eslint": "^10.0.2",
-    "eslint": "^5.16.0",
-    "eslint-loader": "^2.2.1",
-    "eslint-plugin-vue": "^5.2.3",
-    "strip-ansi": "=3.0.1"
+    "eslint": "^6.8.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.1.2",
+    "strip-ansi": "6.0.0"
   },
   "engines": {
     "node": ">= 8.9.0",
@@ -44,6 +49,7 @@
     "not ie <= 10"
   ],
   "resolutions": {
-    "ajv": "6.8.1"
+    "ajv": "6.8.1",
+    "prosemirror-model": "1.8.2"
   }
 }

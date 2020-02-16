@@ -1,6 +1,6 @@
 <template>
   <q-page padding class="editor">
-    <editor-content class="editor__content" :editor="editor" />
+    <editor-content class="editor__content" :editor="myeditor" />
   </q-page>
 </template>
 
@@ -17,13 +17,13 @@ import {
 import Iframe from './Iframe.js'
 
 export default {
-  mixins: [ UiMixin, PageMixin ],
+  mixins: [UiMixin, PageMixin],
   components: {
     EditorContent
   },
   data () {
     return {
-      editor: new Editor({
+      myeditor: new Editor({
         extensions: [
           new HardBreak(),
           new Heading({ levels: [1, 2, 3] }),

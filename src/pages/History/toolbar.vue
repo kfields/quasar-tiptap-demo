@@ -37,7 +37,7 @@ import { EditorMenuBar } from 'tiptap'
 import { mapActions } from 'vuex'
 export default {
   name: 'ImagesToolbar',
-  mixins: [ UiMixin ],
+  mixins: [UiMixin],
   props: [],
   components: {
     EditorMenuBar

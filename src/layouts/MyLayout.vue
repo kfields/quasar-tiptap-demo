@@ -17,7 +17,7 @@ import { UiMixin, LayoutMixin } from 'src/mixins'
 import LeftDrawer from 'components/LeftDrawer'
 export default {
   name: 'MyLayout',
-  mixins: [ UiMixin, LayoutMixin ],
+  mixins: [UiMixin, LayoutMixin],
   components: {
     LeftDrawer
   },

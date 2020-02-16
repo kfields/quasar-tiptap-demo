@@ -31,6 +31,7 @@ module.exports = {
 
   // add your custom rules here
   rules: {
+    'camelcase': 'off',
     // allow async-await
     'generator-star-spacing': 'off',
     // allow paren-less arrow functions
@@ -48,7 +49,7 @@ module.exports = {
     'prefer-promise-reject-errors': 'off',
 
     // allow console.log during development only
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    // 'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     // allow debugger during development only
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }

@@ -43,7 +43,7 @@ import {
 } from 'tiptap-extensions'
 
 export default {
-  mixins: [ UiMixin, PageMixin ],
+  mixins: [UiMixin, PageMixin],
   components: {
     EditorContent
   },
@@ -240,7 +240,7 @@ export default {
 
 <style lang="scss">
 @import "src/css/main";
-@import "~tippy.js/index.css";
+@import "~tippy.js/dist/tippy.css";
 
 .mention {
   background: rgba($color-black, 0.1);
