@@ -217,16 +217,16 @@ export default {
       const c = {}
       c.top = a.top - b.top
       c.left = a.left - b.left
-      // const rect = node.getBoundingClientRect()
-      const rect = c
+      c.width = a.width
+      c.height = a.height
       console.log(c)
 
       const element = document.createElement('div')
       element.style.position = 'absolute'
-      element.style.left = rect.left + 'px'
-      element.style.top = rect.top + 'px'
-      element.style.width = rect.width + 'px'
-      element.style.height = rect.height + 'px'
+      element.style.left = c.left + 'px'
+      element.style.top = c.top + 'px'
+      element.style.width = c.width + 'px'
+      element.style.height = c.height + 'px'
       this.$refs.editor.appendChild(element)
       this.element = element
       this.popup = tippy(element, {
