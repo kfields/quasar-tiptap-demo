@@ -16,7 +16,7 @@
     "@popperjs/core": "^2.0.6",
     "@quasar/extras": "^1.5.1",
     "ajv": "6.11.0",
-    "axios": "^0.19.1",
+    "axios": "^0.21.1",
     "fuse.js": "^3.4.5",
     "node-sass": "^4.12.0",
     "quasar": "^1.9.2",
