@@ -15,7 +15,7 @@
   "dependencies": {
     "@popperjs/core": "^2.0.6",
     "@quasar/extras": "^1.5.1",
-    "ajv": "6.11.0",
+    "ajv": "6.12.3",
     "axios": "^0.19.1",
     "fuse.js": "^3.4.5",
     "node-sass": "^4.12.0",
